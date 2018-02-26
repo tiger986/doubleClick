@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.d{
+			width: 100px;
+			height: 100px;
+			background: red;
+			margin: 200px auto;
+		}
+	</style>
+	<script src="jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>		
+</head>
+<body>
+	<div class="d"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		var time = null;
+		
+		$('.d').click(function(){
+		    clearTimeout(time);
+		    time = setTimeout(function(){
+		        console.log("单击");
+		    },300);
+		});
+		
+		$('.d').dblclick(function(){
+		    clearTimeout(time);
+		    console.log("双击");
+		});
+	})
+	
+</script>
