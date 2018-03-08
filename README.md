@@ -5,11 +5,11 @@ var time = null;
 $('.d').click(function(){
     clearTimeout(time);
     time = setTimeout(function(){
-	console.log("单击");
+	console.log("Single click");
     },300);
 });
 		
 $('.d').dblclick(function(){
     clearTimeout(time);
-    console.log("双击");
+    console.log("Double click");
 });
