@@ -1,5 +1,5 @@
-### Double click elements do not trigger their click events
-##### JS code
+## Double click elements do not trigger their click events
+#### JS code
 ```javascript
 var time = null;		
 $('.d').click(function(){
